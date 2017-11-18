@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.crazy.insane.remotecontrol.MainActivity"
+    android:background="@drawable/bgimg"
+    >
+
+    <ImageButton
+        android:id="@+id/downButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/down"
+        android:background="@null"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/leftButton"
+        android:layout_alignStart="@+id/upButton" />
+    <ImageButton
+        android:id="@+id/upButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/up"
+        android:background="@null"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:layout_marginBottom="29dp"
+        android:layout_above="@+id/leftButton"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:id="@+id/leftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/left"
+        android:background="@null"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:layout_marginEnd="24dp"
+        android:layout_alignTop="@+id/rightButton"
+        android:layout_toStartOf="@+id/stopButton" />
+    <ImageButton
+        android:id="@+id/rightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/right"
+        android:background="@null"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="270dp"
+        android:layout_marginStart="22dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/stopButton" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="STOP"
+        android:background="#9CF074"/>
+
+</android.widget.RelativeLayout>
