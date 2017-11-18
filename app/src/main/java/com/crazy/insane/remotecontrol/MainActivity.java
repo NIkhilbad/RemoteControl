@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton right = (ImageButton) findViewById(R.id.rightButton);
         Button stop = (Button) findViewById(R.id.stopButton);
 
-
+        //UP button 
         up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
